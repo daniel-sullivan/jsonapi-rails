@@ -12,7 +12,7 @@ module JSONAPI
       def render(resources, options, controller)
         options = options.dup
 
-        if (pagination_links = controller.jsonapi_pagination(resources))
+        if (pagination_links = controller.jsonapi_pagination(resources, options))
           (options[:links] ||= {}).merge!(pagination_links)
         end
         options[:expose]  =

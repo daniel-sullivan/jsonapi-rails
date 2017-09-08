@@ -56,7 +56,7 @@ module JSONAPI
         }
       end
 
-      def jsonapi_pagination(_collection)
+      def jsonapi_pagination(_collection, _options = nil)
         nil
       end
 
