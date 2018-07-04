@@ -14,11 +14,13 @@ Gem::Specification.new do |spec|
   spec.files         = Dir['README.md', 'lib/**/*']
   spec.require_path  = 'lib'
 
-  spec.add_dependency 'jsonapi-rb', '~> 0.3.0'
+  spec.add_dependency 'jsonapi-rb', '~> 0.5.0'
   spec.add_dependency 'jsonapi-parser', '~> 0.1.0'
 
   spec.add_development_dependency 'rails', '~> 5.0'
   spec.add_development_dependency 'sqlite3'
   spec.add_development_dependency 'rake',        '~> 11.3'
   spec.add_development_dependency 'rspec-rails', '~> 3.5'
+  spec.add_development_dependency 'with_model',  '~> 2.0'
+  spec.add_development_dependency 'simplecov'
 end
