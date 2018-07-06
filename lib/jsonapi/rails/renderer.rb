@@ -25,7 +25,7 @@ module JSONAPI
           opts[:cache] ||= controller.jsonapi_cache
           opts[:links] =
             controller.jsonapi_links
-                      .merge!(controller.jsonapi_pagination(resources))
+                      .merge!(controller.jsonapi_pagination(resources, options))
                       .merge!(opts[:links] || {})
           opts[:expose] = controller.jsonapi_expose.merge!(opts[:expose] || {})
           opts[:fields] ||= controller.jsonapi_fields
